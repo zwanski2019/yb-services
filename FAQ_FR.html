@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: linear-gradient(135deg, #002E5B, #004080);
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 4px solid #003366;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .faq {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .faq:last-child {
+            border-bottom: none;
+        }
+        .faq button {
+            width: 100%;
+            text-align: left;
+            padding: 15px;
+            font-size: 16px;
+            background: #f9f9f9;
+            border: none;
+            border-radius: 5px;
+            color: #002E5B;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+            outline: none;
+        }
+        .faq button:hover {
+            background-color: #f0f0f0;
+        }
+        .faq button:focus {
+            background-color: #e9ecef;
+        }
+        .faq button .icon {
+            font-size: 20px;
+        }
+        .faq-content {
+            display: none;
+            padding: 15px;
+            background-color: #f4f4f4;
+            border-left: 4px solid #002E5B;
+            border-radius: 5px;
+            margin-top: 5px;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Questions fréquemment posées</h1>
+    </div>
+
+    <div class="container">
+        <div class="faq">
+            <button onclick="toggleFAQ(this)">
+                Quels services proposez-vous ?
+                <span class="icon">+</span>
+            </button>
+            <div class="faq-content">
+                <p>Nous proposons une large gamme de services, notamment le recouvrement de créances, l'assistance administrative, les audits financiers et les solutions RH. Notre équipe est dédiée à fournir un soutien de qualité adapté à vos besoins.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button onclick="toggleFAQ(this)">
+                Comment puis-je réserver un service ?
+                <span class="icon">+</span>
+            </button>
+            <div class="faq-content">
+                <p>Réserver un service est simple ! Il vous suffit de visiter notre page de services, de sélectionner le service dont vous avez besoin et de cliquer sur le bouton "Réserver maintenant". Alternativement, vous pouvez nous contacter directement pour une assistance personnalisée.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button onclick="toggleFAQ(this)">
+                Quelle est votre structure tarifaire ?
+                <span class="icon">+</span>
+            </button>
+            <div class="faq-content">
+                <p>Nos tarifs varient en fonction du service et de la portée du projet. Veuillez contacter notre équipe pour un devis détaillé en fonction de vos besoins spécifiques.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button onclick="toggleFAQ(this)">
+                Puis-je obtenir un package de services personnalisé ?
+                <span class="icon">+</span>
+            </button>
+            <div class="faq-content">
+                <p>Absolument ! Nous comprenons que chaque client a des besoins uniques. Contactez-nous pour discuter de vos exigences, et nous créerons un package personnalisé rien que pour vous.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.icon');
+
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                icon.textContent = '+';
+            } else {
+                content.style.display = 'block';
+                icon.textContent = '-';
+            }
+        }
+    </script>
+</body>
+</html>

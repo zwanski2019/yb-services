@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .service-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service-content {
+            padding: 20px;
+        }
+        .service-content h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #002E5B;
+        }
+        .toggle-description {
+            background-color: #002E5B;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .toggle-description:hover {
+            background-color: #004080;
+        }
+        .description {
+            margin-top: 15px;
+            display: none;
+        }
+        .description.show {
+            display: block;
+        }
+        .description ul {
+            padding-left: 20px;
+        }
+        .book-now {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .book-now:hover {
+            background-color: #002E5B;
+        }
+        a {
+            color: #002E5B;
+            text-decoration: none;
+            border-bottom: 1px dotted #002E5B;
+        }
+        a:hover {
+            border-bottom: 1px solid #002E5B;
+        }
+        .testimonial-section {
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-slider {
+            overflow: hidden;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .testimonial {
+            flex: 0 0 100%;
+            padding: 20px;
+            text-align: center;
+        }
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .testimonial h4 {
+            color: #002E5B;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="services-container">
+            <!-- Recouvrement Service Card -->
+            <div class="service-card">
+                <img src="https://blanchedalmond-gnu-194080.hostingersite.com/wp-content/uploads/2024/06/Services-1.png" alt="Recouvrement">
+                <div class="service-content">
+                    <h3><a href="https://fr.wikipedia.org/wiki/Recouvrement_de_cr%C3%A9ances" target="_blank">Recouvrement</a></h3>
+                    <button class="toggle-description">View Details</button>
+                    <div class="description">
+                        <p>Notre équipe spécialisée dans le <a href="https://fr.wikipedia.org/wiki/Recouvrement_de_cr%C3%A9ances" target="_blank">recouvrement</a> s'assure que vos clients respectent leurs échéances de paiement. Nous les contactons régulièrement et effectuons des rappels afin de minimiser les retards et les risques d'<a href="https://fr.wikipedia.org/wiki/Impay%C3%A9" target="_blank">impayés</a>.</p>
+                        <p>Le recouvrement de créances est l'ensemble des moyens mis en œuvre pour obtenir le paiement de sommes dues. Cela peut inclure des relances amiables, des négociations, et parfois des procédures judiciaires.</p>
+                        <button class="book-now">réserver maintenant</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Administratifs, Audit, Financiers et d'Achat -->
+            <div class="service-card">
+                <img src="https://blanchedalmond-gnu-194080.hostingersite.com/wp-content/uploads/2024/06/Services-2.png" alt="Services Administratifs">
+                <div class="service-content">
+                    <h3><a href="https://fr.wikipedia.org/wiki/Service_administratif" target="_blank">Services Administratifs</a>, <a href="https://fr.wikipedia.org/wiki/Audit" target="_blank">Audit</a>, <a href="https://fr.wikipedia.org/wiki/Finance" target="_blank">Financiers</a> et d'<a href="https://fr.wikipedia.org/wiki/Achat" target="_blank">Achat</a></h3>
+                    <button class="toggle-description">View Details</button>
+                    <div class="description">
+                        <p>
+                            Nous vous accompagnons dans la gestion et l'organisation des documents comptables, en étroite collaboration avec votre service de <a href="https://fr.wikipedia.org/wiki/Comptabilit%C3%A9" target="_blank">comptabilité</a>. Voici ce que nous offrons :
+                        </p>
+                        <ul>
+                            <li><strong>Gestion des achats et des approvisionnements :</strong> Coordination des achats en optimisant les coûts tout en respectant vos besoins.</li>
+                            <li><strong>Coordination avec les administrations tunisiennes :</strong> Gestion des autorisations, déclarations, et interactions administratives pour garantir la conformité légale.</li>
+                            <li><strong>Élaboration de <a href="https://fr.wikipedia.org/wiki/Rapport_financier" target="_blank">rapports financiers</a> précis :</strong> Fourniture de rapports détaillés pour une vision claire de la santé financière de votre entreprise.</li>
+                            <li><strong>Suivi rigoureux de vos <a href="https://fr.wikipedia.org/wiki/Budget" target="_blank">budgets</a> :</strong> Veille à ce que le budget soit respecté et ajusté selon vos besoins.</li>
+                            <li><strong><a href="https://fr.wikipedia.org/wiki/Audit" target="_blank">Audit</a> des pièces comptables :</strong> Audit interne pour vérifier les factures et assurer l'ordre administratif.</li>
+                            <li><strong>Audit de la procédure interne :</strong> Analyse des procédures internes pour identifier des points d'amélioration et optimiser l'efficacité.</li>
+                            <li><strong>Gestion de la <a href="https://fr.wikipedia.org/wiki/Tr%C3%A9sorerie" target="_blank">trésorerie</a> et prévisions :</strong> Prévisions de trésorerie précises pour éviter toute rupture de liquidité.</li>
+                            <li><strong>Déclarations <a href="https://fr.wikipedia.org/wiki/Fiscalit%C3%A9" target="_blank">fiscales</a> et sociales :</strong> Gestion des obligations fiscales, <a href="https://fr.wikipedia.org/wiki/Taxe_sur_la_valeur_ajout%C3%A9e" target="_blank">TVA</a>, et retenue à la source.</li>
+                            <li><strong><a href="https://fr.wikipedia.org/wiki/Facturation" target="_blank">Facturation</a> :</strong> Gestion de la facturation pour garantir un enregistrement précis de chaque vente.</li>
+                            <li><strong>Archivage sécurisé :</strong> Scan et archivage sécurisé des documents pour un accès facile et sécurisé tout en préservant la confidentialité.</li>
+                        </ul>
+                        <p>Ces services englobent la gestion administrative, la planification financière, et les audits nécessaires pour assurer la conformité et l'efficacité organisationnelle.</p>
+                        <button class="book-now">réserver maintenant</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ressources Humaines -->
+            <div class="service-card">
+                <img src="https://blanchedalmond-gnu-194080.hostingersite.com/wp-content/uploads/2024/06/Services-3.png" alt="Ressources Humaines">
+                <div class="service-content">
+                    <h3><a href="https://fr.wikipedia.org/wiki/Ressources_humaines" target="_blank">Ressources Humaines</a></h3>
+                    <button class="toggle-description">View Details</button>
+                    <div class="description">
+                        <p>
+                            Nous aidons les entreprises à <a href="https://fr.wikipedia.org/wiki/Recrutement" target="_blank">recruter</a>, sélectionner et intégrer les bons talents. En plus, nous gérons l'ensemble du processus de <a href="https://fr.wikipedia.org/wiki/Paie" target="_blank">paie</a> et d'administration RH.
+                        </p>
+                        <ul>
+                            <li><strong>Sélection des candidats :</strong> Recrutement et sélection selon vos besoins.</li>
+                            <li><strong>Gestion des fiches de paie :</strong> Création et gestion des fiches de paie mensuelles.</li>
+                            <li><strong>Administration des <a href="https://fr.wikipedia.org/wiki/Contrat_de_travail_en_France" target="_blank">contrats</a> :</strong> Gestion des contrats de travail, congés payés, etc.</li>
+                            <li><strong>Publication d'annonces :</strong> Diffusion des offres d'emploi sur les réseaux sociaux.</li>
+                        </ul>
+                        <p>Les ressources humaines jouent un rôle essentiel dans la gestion des relations au sein des organisations, y compris le recrutement, la formation, et le maintien d'un environnement de travail positif.</p>
+                        <button class="book-now">réserver maintenant</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial Section -->
+        <div class="testimonial-section">
+            <h2 style="text-align: center; color: #002E5B;">Ce que disent nos clients</h2>
+            <div class="testimonial-slider">
+                <div class="slides">
+                    <div class="testimonial">
+                        <p>"Excellente prestation ! Leur équipe nous a aidé à récupérer les paiements rapidement et professionnellement."</p>
+                        <h4>- Sarah L., CEO</h4>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Un partenaire de confiance pour tous vos besoins administratifs et financiers. Fortement recommandé!"</p>
+                        <h4>- John D., Manager</h4>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Leurs services RH sont de premier ordre. Trouvez les candidats parfaits en un rien de temps !"</p>
+                        <h4>- Emily R., HR Lead</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle descriptions
+        document.querySelectorAll('.toggle-description').forEach(button => {
+            button.addEventListener('click', () => {
+                const description = button.nextElementSibling;
+                description.classList.toggle('show');
+                button.textContent = description.classList.contains('show') ? 'Hide Details' : 'View Details';
+            });
+        });
+
+        // Testimonial slider functionality
+        const slides = document.querySelector('.slides');
+        const testimonials = document.querySelectorAll('.testimonial');
+        let index = 0;
+
+        function showNextTestimonial() {
+            index = (index + 1) % testimonials.length;
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        setInterval(showNextTestimonial, 5000); // Change every 5 seconds
+    </script>
+</body>
+</html>
+
