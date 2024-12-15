@@ -20,7 +20,7 @@ YB Services specializes in assisting small and medium-sized enterprises (SMEs) w
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/[your-username]/yb-services.git
+   git clone https://github.com/zwanski2019/yb-services.git
    ```
 2. Install WordPress locally or on a server.
 3. Import the project files into your WordPress installation.
